@@ -14,6 +14,11 @@ class m180215_134540_create_category_table extends Migration
     {
         $this->createTable('category', [
             'id' => $this->primaryKey(),
+            'name_uz'=>$this->string()->notNull(),
+            'name_ru'=>$this->string()->notNull(),
+            'name_en'=>$this->string()->notNull(),
+            'status'=>$this->integer(1)->notNull(),
+
         ]);
     }
 

@@ -14,6 +14,15 @@ class m180215_134623_create_menu_table extends Migration
     {
         $this->createTable('menu', [
             'id' => $this->primaryKey(),
+            'type'=>$this->string()->notNull(),
+            'parent'=>$this->integer()->notNull(),
+            'name_uz'=>$this->string()->notNull(),
+            'name_ru'=>$this->string()->notNull(),
+            'name_en'=>$this->string()->notNull(),
+            'url'=>$this->string()->notNull(),
+            'order_by'=>$this->string()->notNull(),
+            'status'=>$this->integer(1)->notNull(),
+
         ]);
     }
 

@@ -14,6 +14,9 @@ class m180215_134658_create_album_img_table extends Migration
     {
         $this->createTable('album_img', [
             'id' => $this->primaryKey(),
+            'album_id'=>$this->integer()->notNull(),
+            'img'=>$this->string()->notNull(),
+
         ]);
     }
 

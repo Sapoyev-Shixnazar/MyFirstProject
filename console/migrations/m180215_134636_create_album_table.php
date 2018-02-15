@@ -14,6 +14,10 @@ class m180215_134636_create_album_table extends Migration
     {
         $this->createTable('album', [
             'id' => $this->primaryKey(),
+            'name_uz'=>$this->string()->notNull(),
+            'name_ru'=>$this->string()->notNull(),
+            'name_en'=>$this->string()->notNull(),
+            'status'=>$this->integer(1)->notNull(),
         ]);
     }
 
